@@ -1,6 +1,72 @@
 .quiz
     .container
         .quiz__inner
-            .quiz__main
-                h1.quiz__title Как хорошо ты помнишь теорию&nbsp;большого взрыва?
-                .quiz__btn#button-start Начать тест
+            //- .quiz__main
+            //-     h1.quiz__title Quiz Test
+            //-     .quiz__btn#button-start Start
+            form.quiz__form.form
+                <input type="hidden" name="project_name" value="Quiz">
+                <input type="hidden" name="admin_email" value="kuzinhb2019@gmail.com">
+                <input type="hidden" name="form_subject" value="Заява с сайта quiz">
+                .form__content#q1
+                    h2.form__content-quest Quest 1
+                    .form__content-inner
+                        .form__field
+                            input.form__input(type="radio" name="quest1" id="a1" value="answer1")
+                            label.form__label(for="a1") answer1
+                        .form__field
+                            input.form__input(type="radio" name="quest1" id="a2" value="answer2")
+                            label.form__label(for="a2") answer2
+                        .form__field
+                            input.form__input(type="radio" name="quest1" id="a3" value="answer3")
+                            label.form__label(for="a3") answer3
+                        .form__field
+                            input.form__input(type="radio" name="quest1" id="a4" value="answer4")
+                            label.form__label(for="a4") answer4
+                        .form__field
+                            input.form__input(type="radio" name="quest1" id="a5" value="answer5")
+                            label.form__label(for="a5") answer5
+                .form__content#q2
+                    h2.form__content-quest Quest 2
+                    .form__content-inner
+                        .form__field.form__field--fullWidth
+                            input.form__input.form__input--text(type="text" name="quest2" id="a1")
+                .form__content#q3
+                    h2.form__content-quest Quest 4
+                    .calen
+                        #cal_placeholder
+                    input(type="hidden" name="quest3" id="answerEight")
+                .form__content#q4
+                    h2.form__content-quest Quest 4
+                    .form__content-inner
+                        .form__field
+                            input.form__input(type="checkbox" name="quest4" id="a41" value="answer1")
+                            label.form__label(for="a41") answer1
+                        .form__field
+                            input.form__input(type="checkbox" name="quest4" id="a42" value="answer2")
+                            label.form__label(for="a42") answer2
+                        .form__field
+                            input.form__input(type="checkbox" name="quest4" id="a43" value="answer3")
+                            label.form__label(for="a43") answer3
+                        .form__field
+                            input.form__input(type="checkbox" name="quest4" id="a44" value="answer4")
+                            label.form__label(for="a44") answer4
+                        .form__field
+                            input.form__input(type="checkbox" name="quest4" id="a45" value="answer5")
+                            label.form__label(for="a45") answer5
+                        .form__field
+                            input.form__input(type="checkbox" name="quest4" id="a46" value="answer6")
+                            label.form__label(for="a46") answer6
+                .form__content#q5
+                    h2.form__content-quest Остался последний шаг
+                    .form__content-inner
+                        .form__field
+                            input.form__input.form__input--text(type="text" name="phone" id="phone" placeholder="Ваш Телефон")
+                        .form__field
+                            input.form__input.form__input--text(type="text" name="email" id="email" placeholder="Ваш Email")
+                        input(type="submit" value="Send").form__control-btn.btn-submit
+                .note
+                .form__control
+                    .form__control-btn.form__control-btn-prev Prev
+                    .form__control-btn.form__control-btn-next Next
+                     

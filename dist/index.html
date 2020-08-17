@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>kuzinkim</title>
+    <title>quizTest</title>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="content"/>
     <meta property="og:title" content="content"/>
@@ -24,13 +24,101 @@
       <div class="quiz">
         <div class="container">
           <div class="quiz__inner">
-            <div class="quiz__main">
-              <h1 class="quiz__title">Как хорошо ты помнишь теорию&nbsp;большого взрыва?</h1>
-              <div class="quiz__btn" id="button-start">Начать тест</div>
-            </div>
+            <form class="quiz__form form"><input type="hidden" name="project_name" value="Quiz">
+<input type="hidden" name="admin_email" value="kuzinhb2019@gmail.com">
+<input type="hidden" name="form_subject" value="Заява с сайта quiz">
+              <div class="form__content" id="q1">
+                <h2 class="form__content-quest">Quest 1</h2>
+                <div class="form__content-inner">
+                  <div class="form__field">
+                    <input class="form__input" type="radio" name="quest1" id="a1" value="answer1"/>
+                    <label class="form__label" for="a1">answer1</label>
+                  </div>
+                  <div class="form__field">
+                    <input class="form__input" type="radio" name="quest1" id="a2" value="answer2"/>
+                    <label class="form__label" for="a2">answer2</label>
+                  </div>
+                  <div class="form__field">
+                    <input class="form__input" type="radio" name="quest1" id="a3" value="answer3"/>
+                    <label class="form__label" for="a3">answer3</label>
+                  </div>
+                  <div class="form__field">
+                    <input class="form__input" type="radio" name="quest1" id="a4" value="answer4"/>
+                    <label class="form__label" for="a4">answer4</label>
+                  </div>
+                  <div class="form__field">
+                    <input class="form__input" type="radio" name="quest1" id="a5" value="answer5"/>
+                    <label class="form__label" for="a5">answer5</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form__content" id="q2">
+                <h2 class="form__content-quest">Quest 2</h2>
+                <div class="form__content-inner">
+                  <div class="form__field form__field--fullWidth">
+                    <input class="form__input form__input--text" type="text" name="quest2" id="a1"/>
+                  </div>
+                </div>
+              </div>
+              <div class="form__content" id="q3">
+                <h2 class="form__content-quest">Quest 4</h2>
+                <div class="calen">
+                  <div id="cal_placeholder"></div>
+                </div>
+                <input type="hidden" name="quest3" id="answerEight"/>
+              </div>
+              <div class="form__content" id="q4">
+                <h2 class="form__content-quest">Quest 4</h2>
+                <div class="form__content-inner">
+                  <div class="form__field">
+                    <input class="form__input" type="checkbox" name="quest4" id="a41" value="answer1"/>
+                    <label class="form__label" for="a41">answer1</label>
+                  </div>
+                  <div class="form__field">
+                    <input class="form__input" type="checkbox" name="quest4" id="a42" value="answer2"/>
+                    <label class="form__label" for="a42">answer2</label>
+                  </div>
+                  <div class="form__field">
+                    <input class="form__input" type="checkbox" name="quest4" id="a43" value="answer3"/>
+                    <label class="form__label" for="a43">answer3</label>
+                  </div>
+                  <div class="form__field">
+                    <input class="form__input" type="checkbox" name="quest4" id="a44" value="answer4"/>
+                    <label class="form__label" for="a44">answer4</label>
+                  </div>
+                  <div class="form__field">
+                    <input class="form__input" type="checkbox" name="quest4" id="a45" value="answer5"/>
+                    <label class="form__label" for="a45">answer5</label>
+                  </div>
+                  <div class="form__field">
+                    <input class="form__input" type="checkbox" name="quest4" id="a46" value="answer6"/>
+                    <label class="form__label" for="a46">answer6</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form__content" id="q5">
+                <h2 class="form__content-quest">Остался последний шаг</h2>
+                <div class="form__content-inner">
+                  <div class="form__field">
+                    <input class="form__input form__input--text" type="text" name="phone" id="phone" placeholder="Ваш Телефон"/>
+                  </div>
+                  <div class="form__field">
+                    <input class="form__input form__input--text" type="text" name="email" id="email" placeholder="Ваш Email"/>
+                  </div>
+                  <input class="form__control-btn btn-submit" type="submit" value="Send"/>
+                </div>
+              </div>
+              <div class="note"></div>
+              <div class="form__control">
+                <div class="form__control-btn form__control-btn-prev">Prev</div>
+                <div class="form__control-btn form__control-btn-next">Next</div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
   </body>
 </html>

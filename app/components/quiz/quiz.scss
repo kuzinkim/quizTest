@@ -6,7 +6,6 @@
 
     &__inner{
         width: 800px;
-        height: 500px;
         background-color: #fff;
         margin: auto;
         display: flex;
@@ -14,7 +13,8 @@
         align-items: center;
         box-shadow: 0 0 10px rgba(0,0,0,0.5);
         text-align: center;
-        padding: 0 25px;
+        padding: 60px 25px;
+        flex-direction: column;
     }
 
     &__title{
@@ -40,4 +40,203 @@
             box-shadow: 0 0 0 2px #CB272C;
         }
     }
+}
+
+.form{
+    width: 100%;
+    &__input{
+        position: absolute;
+        top: -999999px;
+        left: -9999999px;
+
+        &:checked ~ .form__label{
+            background-color: #CB272C;
+            color: #fff;
+        }
+
+        &--text{
+            position: static;
+            padding: 20px 25px;
+            display: block;
+            border: 2px solid #CB272C;
+            transition: all 0.3s ease;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 500;
+            width: 100%;
+        }
+    }
+
+    &__label{
+        padding: 20px 25px;
+        display: block;
+        border: 2px solid #CB272C;
+        transition: all 0.3s ease;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 500;
+
+        &:hover{
+            background-color: #CB272C;
+            color: #fff;
+        }
+    }
+
+    &__content{
+        text-align: left;
+        display: none;
+
+        &-inner{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        &-quest{
+            font-size: 32px;
+            margin-bottom: 60px;
+        }
+
+        &.active{
+            display: block;
+        }
+    }
+
+    &__field{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+
+        &--fullWidth{
+            width: 100%;
+        }
+    }
+
+    &__control{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 30px;
+
+        &-btn{
+            background-color: #CB272C;
+            color: #fff;
+            display: inline-block;
+            font-size: 20px;
+            padding: 15px 35px;
+            border-radius: 40px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover{
+                background-color: #fff;
+                color: #CB272C;
+                box-shadow: 0 0 0 2px #CB272C;
+            }
+
+            &-prev{
+                background-color: #fff;
+                color: #CB272C;
+
+                &:hover{
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}
+
+input[type="submit"]{
+    border: none;
+}
+
+.calen{
+    padding: 10px;
+    padding-left: 20px;
+    width: 255px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table.calendar caption {
+    font-size: 18px;
+}
+
+table.calendar {
+    margin-left: 0;
+    background: #fff;
+    text-align: center;
+    font-size: 12px;
+    padding: 20px;
+    width: 100%;
+}
+
+table.calendar th {
+    color: #252424;
+    font-weight: 100;
+    text-align: center;
+    font-size: 16px;
+    background: #fff;
+    padding: 10px 0;
+
+}
+
+table.calendar a {
+    font-weight: 100;
+    text-decoration: none;
+    color: #616161;
+    text-align: center;
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #616161;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+table.calendar caption a {
+    display: inline;
+    font-weight: 100;
+    font-size: 25px;
+    color: #252424;
+    border: none !important;
+}
+
+td.in_month {
+    text-align: center;
+    font-weight: normal;
+    line-height: 40px;
+    background: #fff;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    line-height: 40px;
+}
+
+.next_month {
+    float: right;
+    border: none !important;
+    margin-bottom: 5px !important;
+    margin-top: -5px;
+}
+
+.prev_month {
+    float: left;
+    border: none !important;
+    margin-bottom: 5px !important;
+    margin-top: -5px;
+}
+
+table.calendar td.selected a {
+    background: #CB272C;
+    color: #fff;
+}
+
+.note{
+    display: none;
 }

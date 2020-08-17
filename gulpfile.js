@@ -100,7 +100,7 @@ gulp.task('js-libs', function() {
 					indent: true
 			}))
 			.pipe(sourcemaps.init())
-			.pipe(uglify())
+			// .pipe(uglify())
 			.pipe(sourcemaps.write())
 			.pipe(rename({suffix: '.min'}))
 			.pipe(gulp.dest('dist/js'))
@@ -151,7 +151,7 @@ gulp.task('js-build', function() {
 					basepath: '@file',
 					indent: true
 			}))
-			.pipe(uglify())
+			// .pipe(uglify())
 			.pipe(gulp.dest('dist/js'))
 			.pipe(browserSync.reload({ stream: true }))
 });
